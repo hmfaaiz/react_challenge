@@ -5,9 +5,7 @@ function Bootstrap() {
 
     const bootstrapHandle = () => {
 
-        < Alert variant='warning'>
-            This is a alert—check it out!
-        </Alert >
+        alert("https://react-bootstrap.github.io/")
     }
     return (
         <div>
