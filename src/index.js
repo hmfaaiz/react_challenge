@@ -11,6 +11,7 @@ import UseEffect from './components/UseEffect';
 import Bootstrap from './components/Bootstrap';
 import Array from './components/Array';
 import ListWithinList from './components/ListWithinList';
+import UseMemo from './components/UseMemo';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -26,7 +27,8 @@ root.render(
   {/* <UseEffect/> */}
   {/* <Bootstrap/> */}
   {/* <Array/> */}
-  <ListWithinList/>
+  {/* <ListWithinList/> */}
+  <UseMemo/>
 
   </React.StrictMode>
 );
