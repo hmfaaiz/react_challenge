@@ -9,6 +9,7 @@ import Form from './components/Form';
 import Login from './components/Login';
 import UseEffect from './components/UseEffect';
 import Bootstrap from './components/Bootstrap';
+import Array from './components/Array';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -22,7 +23,8 @@ root.render(
   {/* <Form/> */}
   {/* <Login/> */}
   {/* <UseEffect/> */}
-  <Bootstrap/>
+  {/* <Bootstrap/> */}
+  <Array/>
   </React.StrictMode>
 );
 
