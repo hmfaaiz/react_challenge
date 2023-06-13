@@ -10,16 +10,19 @@ import Login from './components/Login';
 import UseEffect from './components/UseEffect';
 import Bootstrap from './components/Bootstrap';
 import Array from './components/Array';
-import ListWithinList from './components/ListWithinList';
+// import ListWithinList from './components/ListWithinList';
 import UseMemo from './components/UseMemo';
 import UseRef from './components/UseRef';
-
+import Home from "./components/Home"
+import About from "./components/About"
+import Navbar from "./components/Navbar"
+import { BrowserRouter, Route, Routes,Link } from "react-router-dom";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
-    <App />
-   
+  <>
+  
+   {/* <App/> */}
     {/* <Component2/>
     <Component1/> */}
      {/* <ClickEvent/> */}
@@ -30,8 +33,17 @@ root.render(
   {/* <Array/> */}
   {/* <ListWithinList/> */}
   {/* <UseMemo/> */}
-  <UseRef/>
+  {/* <UseRef/> */}
+  < BrowserRouter>
+  <Navbar/>
+        <Routes>
+          <Route path="/home" element={<Home />} />
 
-  </React.StrictMode>
+          <Route path="/about" element={<About />} />
+          <Route path="/*" element={<h1>Page not found </h1>} />
+        </Routes>
+      </BrowserRouter>
+
+      </>
 );
 

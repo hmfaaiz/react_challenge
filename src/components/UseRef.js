@@ -3,9 +3,9 @@ import ForwardRef from "./ForwardRef"
 function UseRef() {
     const inputTag=useRef(null)
     const change=()=>{
-        // inputTag.current.style.color="red"
+        inputTag.current.style.color="red"
         inputTag.current.value="Yes"
-        // inputTag.current.focus()
+        inputTag.current.focus()
         // inputTag.current.style.display="none"
     }
   return (
