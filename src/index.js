@@ -12,6 +12,7 @@ import Bootstrap from './components/Bootstrap';
 import Array from './components/Array';
 import ListWithinList from './components/ListWithinList';
 import UseMemo from './components/UseMemo';
+import UseRef from './components/UseRef';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -28,7 +29,8 @@ root.render(
   {/* <Bootstrap/> */}
   {/* <Array/> */}
   {/* <ListWithinList/> */}
-  <UseMemo/>
+  {/* <UseMemo/> */}
+  <UseRef/>
 
   </React.StrictMode>
 );
