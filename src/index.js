@@ -5,6 +5,7 @@ import App from './App';
 import {Component1,Component2} from './components/TwoComponent';
 import ClickEvent from './components/ClickEvent';
 import Form from './components/Form';
+import Login from './components/Login';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -15,7 +16,8 @@ root.render(
     {/* <Component2/>
     <Component1/> */}
      {/* <ClickEvent/> */}
-  <Form/>
+  {/* <Form/> */}
+  <Login/>
   </React.StrictMode>
 );
 
