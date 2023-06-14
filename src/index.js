@@ -24,6 +24,7 @@ import Viavideo from './components/Viavideo';
 import Viacall from './components/Viacall';
 import Auth from './components/Auth';
 import Signin from './components/Signin';
+import Fetchapi from './components/Fetchapi';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -55,6 +56,7 @@ root.render(
           <Route path="viacall" element={<Viacall />} />
         </Route>
         <Route path="/signin" element={<Signin/>} />
+        <Route path="/fetchapi" element={<Fetchapi/>} />
       </Routes>
     </BrowserRouter>
 
