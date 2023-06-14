@@ -1,6 +1,8 @@
 import React from 'react'
-import {Link} from "react-router-dom";
+import {Link,useLocation} from "react-router-dom";
 function About() {
+  const loc=useLocation()
+  console.log(loc)
   return (
     <div>
       <h1>About</h1>
