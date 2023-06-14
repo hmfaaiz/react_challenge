@@ -22,6 +22,8 @@ import Contact from "./components/Contact"
 import { BrowserRouter, Route, Routes, Link } from "react-router-dom";
 import Viavideo from './components/Viavideo';
 import Viacall from './components/Viacall';
+import Auth from './components/Auth';
+import Signin from './components/Signin';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -42,16 +44,17 @@ root.render(
     < BrowserRouter>
       <Navbar />
       <Routes>
-        <Route path="/home" element={<Home />} />
+        <Route path="/home" element={<Auth  Component={Home}/>} />
 
-        <Route path="/about" element={<About />} />
+        <Route path="/about"  element={<Auth  Component={About}/>} />
         <Route path="/user/:name" element={<User />} />
         <Route path="/*" element={<h1>Page not found </h1>} />
-        <Route path="/filter" element={<Filter />} />
-        <Route path="/contact/" element={<Contact />} >
+        <Route path="/filter" element={<Auth  Component={Filter}/>} />
+        <Route path="/contact/" element={<Auth  Component={Contact}/>}  >
           <Route path="viavideo" element={<Viavideo />} />
           <Route path="viacall" element={<Viacall />} />
         </Route>
+        <Route path="/signin" element={<Signin/>} />
       </Routes>
     </BrowserRouter>
 

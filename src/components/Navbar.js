@@ -12,6 +12,7 @@ function Navbar() {
           <li><NavLink className="link" to="/about" >About</NavLink></li>
           <li><NavLink className="link" to="/filter" >Filter</NavLink></li>
           <li><NavLink className="link" to="/contact" >Contact</NavLink></li>
+          <li><NavLink className="link" to="/signin" >Sign in</NavLink></li>
         </ul>
       </div>
       {/* <div className='App'>
