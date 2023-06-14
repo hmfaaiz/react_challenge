@@ -1,22 +1,25 @@
 import React from 'react'
 import '../App.css';
 
-import {Link } from "react-router-dom";
+import { Link,NavLink } from "react-router-dom";
 function Navbar() {
-  
-  return (
-  
-      <div className="App">
-        <h1>Navbar</h1>
-  
-      
-        <Link to="/home" >Home</Link>
-        <br />
-        <Link to="/about" >About</Link>
-       
 
+  return (
+    <>
+      <div>
+        <ul  className="nav">
+          <li><NavLink className="link" to="/home" >Home</NavLink></li>
+          <li><NavLink className="link" to="/about" >About</NavLink></li>
+        </ul>
       </div>
-   
+      {/* <div className='App'>
+        <h1>Navbar</h1>
+      </div> */}
+
+
+
+    </>
+
   );
 }
 

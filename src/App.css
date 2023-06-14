@@ -22,3 +22,22 @@ table, th, td {
 th, td {
   background-color: #96D4D4;
 }
+
+.nav{
+  text-align: right;
+  background-color: #216e6e;
+
+}
+.nav li{
+  display: inline-block;
+  padding: 10px 10px;
+  
+}
+
+.link{
+  text-decoration: none;
+}
+.active{
+  background-color: rgb(255, 0, 0);
+  color: rgb(255, 255, 255);
+}
