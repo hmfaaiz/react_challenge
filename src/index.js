@@ -17,6 +17,7 @@ import Home from "./components/Home"
 import About from "./components/About"
 import Navbar from "./components/Navbar"
 import User from "./components/User"
+import Filter from "./components/Filter"
 import { BrowserRouter, Route, Routes,Link } from "react-router-dom";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -43,6 +44,7 @@ root.render(
           <Route path="/about" element={<About />} />
           <Route path="/user/:name" element={<User />} />
           <Route path="/*" element={<h1>Page not found </h1>} />
+          <Route path="/filter" element={<Filter/>} />
         </Routes>
       </BrowserRouter>
 

@@ -10,6 +10,7 @@ function Navbar() {
         <ul  className="nav">
           <li><NavLink className="link" to="/home" >Home</NavLink></li>
           <li><NavLink className="link" to="/about" >About</NavLink></li>
+          <li><NavLink className="link" to="/filter" >Filter</NavLink></li>
         </ul>
       </div>
       {/* <div className='App'>
